@@ -2,7 +2,7 @@ package com.leafyjava.tutorials;
 
 import com.leafyjava.tutorials.domains.Burger;
 import com.leafyjava.tutorials.domains.Pizza;
-import com.leafyjava.tutorials.utils.MenuRegistry;
+import com.leafyjava.tutorials.utils.MenuRegistryImpl;
 import com.leafyjava.tutorials.utils.Registry;
 
 import static com.leafyjava.tutorials.utils.enums.Doneness.MEDIUM_WELL;
@@ -10,7 +10,7 @@ import static com.leafyjava.tutorials.utils.enums.MenuItemType.*;
 
 public class Application {
     public static void main(String[] args) {
-        Registry menu = new MenuRegistry();
+        Registry menu = new MenuRegistryImpl();
 
         Burger burger = (Burger) menu.createItem(BURGER);
         burger.setDoneness(MEDIUM_WELL);

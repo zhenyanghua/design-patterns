@@ -7,11 +7,11 @@ import com.leafyjava.tutorials.utils.enums.MenuItemType;
 
 import java.util.Map;
 
-public class MenuRegistry implements Registry<AbstractMenuItem> {
+public class MenuRegistryImpl implements Registry<AbstractMenuItem> {
 
     private Map<MenuItemType, AbstractMenuItem> menu;
 
-    public MenuRegistry() {
+    public MenuRegistryImpl() {
         MenuService menuService = new MenuServiceImpl();
         menu = menuService.loadMenu();
     }
