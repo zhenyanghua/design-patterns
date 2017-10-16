@@ -6,9 +6,10 @@ import com.leafyjava.tutorials.utils.MenuRegistryImpl;
 import com.leafyjava.tutorials.utils.Registry;
 
 import static com.leafyjava.tutorials.utils.enums.Doneness.MEDIUM_WELL;
+import static com.leafyjava.tutorials.utils.enums.Doneness.RARE;
 import static com.leafyjava.tutorials.utils.enums.MenuItemType.*;
 
-public class Application {
+public class PrototypePatternApplication {
     public static void main(String[] args) {
         Registry menu = new MenuRegistryImpl();
 
@@ -19,6 +20,14 @@ public class Application {
         System.out.println(burger.getName());
         System.out.println(burger.getPrice());
         System.out.println(burger.getDoneness());
+
+        Burger burger2 = (Burger) menu.createItem(BURGER);
+        burger2.setDoneness(RARE);
+
+        System.out.println(burger2);
+        System.out.println(burger2.getName());
+        System.out.println(burger2.getPrice());
+        System.out.println(burger2.getDoneness());
 
         Pizza za = (Pizza) menu.createItem(PIZZA);
         za.setThinCrust(true);
