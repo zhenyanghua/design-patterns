@@ -1,4 +1,4 @@
-package com.leafyjava.tutorials.domains;
+package com.leafyjava.tutorials.abstractfactory.domains;
 
 public class Pizza extends AbstractMenuItem {
     private boolean isThinCrust;

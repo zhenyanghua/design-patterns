@@ -1,6 +1,6 @@
-package com.leafyjava.tutorials.domains;
+package com.leafyjava.tutorials.factory.domains;
 
-import com.leafyjava.tutorials.utils.enums.CheeseCakeType;
+import com.leafyjava.tutorials.factory.utils.enums.CheeseCakeType;
 
 public class CheeseCakeFactory {
     private CheeseCakeFactory() {

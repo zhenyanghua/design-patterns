@@ -1,4 +1,4 @@
-package com.leafyjava.tutorials.domains;
+package com.leafyjava.tutorials.factory.domains;
 
 import java.util.ArrayList;
 import java.util.List;

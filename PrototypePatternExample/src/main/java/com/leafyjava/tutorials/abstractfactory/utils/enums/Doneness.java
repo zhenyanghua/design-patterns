@@ -1,4 +1,4 @@
-package com.leafyjava.tutorials.utils.enums;
+package com.leafyjava.tutorials.abstractfactory.utils.enums;
 
 public enum Doneness {
     OVERCOOKED,

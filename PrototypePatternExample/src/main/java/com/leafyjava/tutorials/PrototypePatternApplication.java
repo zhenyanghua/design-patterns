@@ -1,13 +1,13 @@
 package com.leafyjava.tutorials;
 
-import com.leafyjava.tutorials.domains.Burger;
-import com.leafyjava.tutorials.domains.Pizza;
-import com.leafyjava.tutorials.utils.MenuRegistryImpl;
-import com.leafyjava.tutorials.utils.Registry;
+import com.leafyjava.tutorials.abstractfactory.domains.Burger;
+import com.leafyjava.tutorials.abstractfactory.domains.Pizza;
+import com.leafyjava.tutorials.abstractfactory.utils.MenuRegistryImpl;
+import com.leafyjava.tutorials.abstractfactory.utils.Registry;
 
-import static com.leafyjava.tutorials.utils.enums.Doneness.MEDIUM_WELL;
-import static com.leafyjava.tutorials.utils.enums.Doneness.RARE;
-import static com.leafyjava.tutorials.utils.enums.MenuItemType.*;
+import static com.leafyjava.tutorials.abstractfactory.utils.enums.Doneness.MEDIUM_WELL;
+import static com.leafyjava.tutorials.abstractfactory.utils.enums.Doneness.RARE;
+import static com.leafyjava.tutorials.abstractfactory.utils.enums.MenuItemType.*;
 
 public class PrototypePatternApplication {
     public static void main(String[] args) {

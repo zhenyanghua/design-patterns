@@ -1,9 +1,9 @@
-package com.leafyjava.tutorials.utils;
+package com.leafyjava.tutorials.abstractfactory.utils;
 
-import com.leafyjava.tutorials.domains.AbstractMenuItem;
+import com.leafyjava.tutorials.abstractfactory.domains.AbstractMenuItem;
 import com.leafyjava.tutorials.services.MenuService;
 import com.leafyjava.tutorials.services.MenuServiceImpl;
-import com.leafyjava.tutorials.utils.enums.MenuItemType;
+import com.leafyjava.tutorials.abstractfactory.utils.enums.MenuItemType;
 
 import java.util.Map;
 

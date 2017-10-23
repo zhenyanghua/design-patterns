@@ -1,6 +1,6 @@
-package com.leafyjava.tutorials.domains;
+package com.leafyjava.tutorials.abstractfactory.domains;
 
-import com.leafyjava.tutorials.utils.enums.Doneness;
+import com.leafyjava.tutorials.abstractfactory.utils.enums.Doneness;
 
 public class Burger extends AbstractMenuItem {
     private Doneness doneness;

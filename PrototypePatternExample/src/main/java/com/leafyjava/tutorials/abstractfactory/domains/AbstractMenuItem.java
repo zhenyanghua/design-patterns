@@ -1,4 +1,4 @@
-package com.leafyjava.tutorials.domains;
+package com.leafyjava.tutorials.abstractfactory.domains;
 
 public class AbstractMenuItem implements Cloneable {
     private String name;

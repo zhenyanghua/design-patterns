@@ -1,4 +1,4 @@
-package com.leafyjava.tutorials.domains;
+package com.leafyjava.tutorials.factory.domains;
 
 public class ChocolateCheeseCake extends AbstractCheeseCake {
     @Override
