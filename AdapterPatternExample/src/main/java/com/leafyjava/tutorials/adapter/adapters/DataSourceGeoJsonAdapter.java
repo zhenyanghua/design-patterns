@@ -17,7 +17,7 @@ public class DataSourceGeoJsonAdapter implements DataSource {
 
     @Override
     public String getProjectionCode() {
-        return dataSourceGeoJson.getSpacialReference().substring(2);
+        return dataSourceGeoJson.getSpacialReference().substring(4);
     }
 
     @Override
