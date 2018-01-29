@@ -1,0 +1,27 @@
+spring:
+  profiles:
+    active: default, dev
+
+---
+spring:
+  profiles: dev
+logging:
+  level:
+    root: INFO
+show: true
+
+---
+spring:
+  profiles: prod
+logging:
+  level:
+    root: ERROR
+show: false
+
+---
+spring:
+  profiles: test
+logging:
+  level:
+    root: ERROR
+show: false
