@@ -6,9 +6,9 @@ import static org.junit.Assert.assertTrue;
 
 public class ExpressionTest {
 
-    static Expression text1;
-    static Expression text2;
-    static Expression text3;
+    private static Expression text1;
+    private static Expression text2;
+    private static Expression text3;
 
     @BeforeClass
     public static void setup() {
@@ -30,7 +30,7 @@ public class ExpressionTest {
     }
 
     @Test
-    public void andExpressionShouldRequireBothToBeScucess() {
+    public void andExpressionShouldRequireBothToBeSuccess() {
         String context = "This is Foo Bar. Zoo";
         assertFalse(new AndExpression(text1, text2).interpret(context));
         assertTrue(new AndExpression(text1, text3).interpret(context));
