@@ -1,0 +1,22 @@
+// Invoker
+public class DocumentRunner {
+    private FixedStack<Command> stack;
+
+    public DocumentRunner() {
+        this.stack = new FixedStack<>(3);
+    }
+
+    public DocumentRunner(int maxUndoSize) {
+        this.stack = new FixedStack<>(maxUndoSize);
+    }
+
+    public void execute(final Command command) {
+        stack.add(command);
+        command.execute();
+    }
+
+    public void undo() {
+        if (stack.isEmpty()) return;
+        stack.pop().undo();
+    }
+}
