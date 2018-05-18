@@ -1,7 +1,7 @@
 import java.util.Stack;
 
 // caretaker
-public class OperationManager {
+public class AccountManager {
     private Stack<AccountMemento> accountHistory = new Stack<>();
 
     public void save(Account account) {

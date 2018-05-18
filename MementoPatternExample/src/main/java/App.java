@@ -2,7 +2,7 @@ import java.time.LocalDate;
 
 public class App {
     public static void main(String[] args) {
-        OperationManager manager = new OperationManager();
+        AccountManager manager = new AccountManager();
 
         Account account = new Account();
 
