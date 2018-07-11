@@ -3,6 +3,8 @@ package restaurant;
 public abstract class ThreeCourseDinnerTemplate {
 
     public final void order() {
+        beforeStart();
+
         if (serveBeverage()) {
             makeBeverage();
         }
@@ -10,7 +12,13 @@ public abstract class ThreeCourseDinnerTemplate {
         makeStarter();
         makeEntry();
         makeDessert();
+
+        afterFinish();
     }
+
+    protected void beforeStart() {}
+
+    protected void afterFinish() {}
 
     protected boolean serveBeverage() {
         return true;

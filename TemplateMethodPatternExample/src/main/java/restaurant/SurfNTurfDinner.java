@@ -9,6 +9,16 @@ public class SurfNTurfDinner extends ThreeCourseDinnerTemplate {
     }
 
     @Override
+    protected void beforeStart() {
+        System.out.println("Making Surf and Turf Three Course Dinner.");
+    }
+
+    @Override
+    protected void afterFinish() {
+        System.out.println();
+    }
+
+    @Override
     protected boolean serveBeverage() {
         return serveHouseWine;
     }

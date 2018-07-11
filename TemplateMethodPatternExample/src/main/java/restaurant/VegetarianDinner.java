@@ -8,6 +8,11 @@ public class VegetarianDinner extends ThreeCourseDinnerTemplate {
     }
 
     @Override
+    protected void beforeStart() {
+        System.out.println("Making Vegetarian Three Course Dinner.");
+    }
+
+    @Override
     protected boolean serveBeverage() {
         return serverHouseCucumberJuice;
     }
