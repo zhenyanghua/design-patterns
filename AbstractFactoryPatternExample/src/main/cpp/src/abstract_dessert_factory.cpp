@@ -2,6 +2,7 @@
 #include "abstract_dessert_factory.h"
 #include "cookie_factory.h"
 #include "cheesecake_factory.h"
+#include <exception>
 
 /* Implementation of the Abstract Dessert Factory */
 
@@ -14,16 +15,17 @@ AbstractDessertFactory* AbstractDessertFactory::getDessertFactory(int type){
     switch(type){
         case 1:
             return new CookieFactory;
-            break;
         case 2:
             return new CheesecakeFactory;
-            break;
-        //default:
-        //    throw new std::exception("Invalid dessert selection!");
+        default:
+            throw "Invalid dessert selection!";
     }
 }
 
 /* The virtual function getDessert is implemented in the concrete classes, but
  * must be defined in the abstract implementation or else the compiler will complain
  * about an undefined reference. */
-AbstractDessert* AbstractDessertFactory::getDessert(bool) {};
+AbstractDessert* AbstractDessertFactory::getDessert(bool) {
+    //AbstractDessert a = new AbstractDessert();
+    //return &a;
+}

@@ -17,6 +17,7 @@ class AbstractDessertFactory {
 
         /* Abstract method to return a pointer to a AbstractDessert type */
         virtual AbstractDessert* getDessert(bool isChocolocateLover);
+
 };
 
 #endif
